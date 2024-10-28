@@ -1,5 +1,5 @@
-const first_token = artifacts.require("first_token");
+const BigRichManGame = artifacts.require("BigRichManGame");
 
 module.exports = function(deployer) {
-  deployer.deploy(first_token);
-};
+    deployer.deploy(BigRichManGame);
+}

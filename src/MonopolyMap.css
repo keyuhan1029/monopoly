@@ -1,0 +1,130 @@
+.monopoly-map {
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  grid-template-rows: 50px auto 50px;
+  width: 600px; /* 根據需要調整大小 */
+  height: 600px; /* 根據需要調整大小 */
+  position: relative;
+}
+
+.cell {
+  background-color: #aacff0;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 70px;
+  height: 50px;
+  border-radius: 10px; /* 添加圓角，數值可以根據需要調整 */
+}
+
+.top, .bottom {
+  display: flex;
+  grid-column: 2 / 3;
+}
+
+.top .cell, .bottom .cell {
+  width: 100%;
+}
+
+.right, .left {
+  display: flex;
+  flex-direction: column;
+  grid-row: 2 / 3;
+}
+
+.right .cell, .left .cell {
+  height: 100%;
+}
+
+.top {
+  grid-row: 1 / 2;
+}
+
+.bottom {
+  grid-row: 3 / 4;
+}
+
+.right {
+  grid-column: 3 / 4;
+}
+
+.left {
+  grid-column: 1 / 2;
+}
+
+.dice-area {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+
+.dice {
+  width: 50px; /* 根據圖片大小調整 */
+  margin-bottom: 10px;
+}
+
+.dice-container {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  flex-direction: row; 
+}
+
+
+.roll-button .move{
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 60px; 
+  height: 30px; 
+}
+
+.cell.player {
+  background-color: red; /* 或你選擇的任何顏色 */
+}
+
+.status-info {
+  margin-bottom: 20px;
+  font-size: 16px; 
+  color: #333;
+  background-color: #ffffff; /* 设置背景为白色 */
+  border: 1px solid #ccc; /* 添加灰色边框 */
+  padding: 10px; /* 添加内边距 */
+  border-radius: 5px; /* 轻微的圆角 */
+  text-align: center; /* 确保文本居中 */
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 可选：添加轻微的阴影以提升立体感 */
+  width: auto; /* 根据内容自动调整宽度 */
+}
+
+.info-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.info-button:hover {
+  background-color: #0056b3;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
