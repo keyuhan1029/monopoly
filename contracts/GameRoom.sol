@@ -1,4 +1,4 @@
-// pragma solidity ^0.8.0;
+npm// pragma solidity ^0.8.0;
 
 // contract GameRoom {
 //     // 結構體，用於存儲房間信息
