@@ -1,0 +1,74 @@
+/* GameRoom.css - 更簡潔和現代的風格 */
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #424242;
+}
+
+.GameRoom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+.GameRoom p {
+  margin-top: 10px;
+  margin-inline: 40px;
+}
+
+.GameRoom h1, .GameRoom h2 {
+  color: #333;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.GameRoom button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.GameRoom button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.GameRoom button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.GameRoom button:active {
+  transform: translateY(0);
+}
+
+.GameRoom input, .GameRoom select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: calc(100% - 22px);
+  font-size: 16px;
+}
+
+.GameRoom label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
