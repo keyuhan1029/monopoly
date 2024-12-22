@@ -1,0 +1,5 @@
+{
+  "name": "Token #1",
+  "description": "This is the first NFT in my ERC1155 collection.",
+  "image": "http://localhost:3000/metadata/pic/1.png"
+}

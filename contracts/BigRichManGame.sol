@@ -19,7 +19,7 @@ contract BigRichManGame is ERC1155, Ownable {
     mapping(uint256 => string) private _houseMetadataUrls;
 
     // 合約構造函數，設置基礎 metadata 的 URL 模板
-    constructor() ERC1155("https://game.example.com/api/item/{id}.json") {
+    constructor() ERC1155("http://localhost:3000/metadata/{id}.json")  {
         _mint(msg.sender, TOKEN_COIN, 10000, ""); // 初始化，給部署者發行10000遊戲貨幣
     }
 

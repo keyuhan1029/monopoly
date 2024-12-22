@@ -15,7 +15,7 @@ function MonopolyGame() {
     const [contract, setContract] = useState(null);
     const [playerPosition, setPlayerPosition] = useState(1);
     const [account, setAccount] = useState(null);
-    const [diceResults, setDiceResults] = useState({ dice1: null, dice2: null });
+    const [diceResults, setDiceResults] = useState({ dice1: 1, dice2: 1 });
     const [properties, setProperties] = useState([]);
 
     useEffect(() => {
@@ -107,6 +107,7 @@ function MonopolyGame() {
             );
         })
     );
+
 
     return (
         <div className="Home">
